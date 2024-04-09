@@ -228,11 +228,25 @@ object SubprojectB : Project({
     name = "Subproject B"
 
     buildType(SubprojectB_Xs)
+
+    features {
+        githubAppConnection {
+            id = "PROJECT_EXT_64"
+            displayName = "TeamCityCheckTokenScope2"
+            appId = "873321"
+            clientId = "Iv1.631ad6ac96fa2576"
+            clientSecret = "credentialsJSON:504f8a01-2b66-4129-b13d-e22a2af646a0"
+            privateKey = "credentialsJSON:1e5fafd1-c523-4bb3-88f9-1c0da9c120f4"
+            webhookSecret = "credentialsJSON:1e488119-ad8a-4ddd-b9fb-4b4186534473"
+            ownerUrl = "https://github.com/ollven"
+        }
+    }
 })
 
 object SubprojectB_Xs : BuildType({
     name = "xs"
- features {
+
+    features {
         perfmon {
         }
         commitStatusPublisher {

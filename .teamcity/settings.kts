@@ -248,6 +248,10 @@ object SubprojectB : Project({
 object SubprojectB_Xs : BuildType({
     name = "xs"
 
+    vcs {
+        root(SubprojectB_HttpsGithubComOllvenOneTestClassRefsHeadsMain)
+    }
+
     features {
         perfmon {
         }

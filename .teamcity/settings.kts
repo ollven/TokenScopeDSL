@@ -279,6 +279,6 @@ object SubprojectB_HttpsGithubComOllvenOneTestClassRefsHeadsMain : GitVcsRoot({
     branch = "refs/heads/main"
     authMethod = token {
         userName = "oauth2"
-        tokenId = "tc_token_id:CID_c4f4afae51277ab7b131458657afb9f6:-1:2dd7b2a6-e498-4c7e-8b6c-fa4a4b7a67df"
+        tokenId = tokenId = "tc_token_id:CID_c707dfbb36afa4bd6b7ff56d7df26aa3:-1:e1016005-8696-4445-a98c-6445ae12bd4c"
     }
 })

@@ -232,4 +232,17 @@ object SubprojectB : Project({
 
 object SubprojectB_Xs : BuildType({
     name = "xs"
+ features {
+        perfmon {
+        }
+        commitStatusPublisher {
+            vcsRootExtId = "${S_HttpsGithubComOllvenBabyStepsRefsHeadsMain.id}"
+            publisher = github {
+                githubUrl = "https://api.github.com"
+                authType = storedToken {
+                    tokenId = "tc_token_id:CID_c707dfbb36afa4bd6b7ff56d7df26aa3:-1:e1016005-8696-4445-a98c-6445ae12bd4c"
+                }
+            }
+        }
+    }
 })

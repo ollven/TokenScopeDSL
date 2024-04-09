@@ -227,6 +227,8 @@ object S_SubprojectAChild_HttpsGithubComOllvenNetSimpleProjectRefsHeadsMain : Gi
 object SubprojectB : Project({
     name = "Subproject B"
 
+    vcsRoot(SubprojectB_HttpsGithubComOllvenOneTestClassRefsHeadsMain)
+
     buildType(SubprojectB_Xs)
 
     features {
@@ -258,5 +260,15 @@ object SubprojectB_Xs : BuildType({
                 }
             }
         }
+    }
+})
+
+object SubprojectB_HttpsGithubComOllvenOneTestClassRefsHeadsMain : GitVcsRoot({
+    name = "https://github.com/ollven/oneTestClass#refs/heads/main"
+    url = "https://github.com/ollven/oneTestClass"
+    branch = "refs/heads/main"
+    authMethod = token {
+        userName = "oauth2"
+        tokenId = "tc_token_id:CID_c4f4afae51277ab7b131458657afb9f6:-1:2dd7b2a6-e498-4c7e-8b6c-fa4a4b7a67df"
     }
 })

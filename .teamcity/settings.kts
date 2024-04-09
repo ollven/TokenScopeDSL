@@ -252,6 +252,14 @@ object SubprojectB_Xs : BuildType({
         root(SubprojectB_HttpsGithubComOllvenOneTestClassRefsHeadsMain)
     }
 
+    steps {
+        maven {
+            id = "Maven2"
+            goals = "clean test"
+            runnerArgs = "-Dmaven.test.failure.ignore=true"
+        }
+    }
+
     features {
         perfmon {
         }
